@@ -2,7 +2,7 @@
 > [!WARNING]
 > **This is a LinuxServer Labs image. It is not part of the main LinuxServer.io fleet.**
 >
-> Labs publishes newer, less proven software before it can earn a place in the main fleet. The LinuxServer team reviews every change to this repository and builds it with the same pipeline and base images as the fleet, but the application itself has not been security reviewed: its code, its releases and the files this image downloads from them are used as upstream publishes them. Treat it as you would any unaudited software: understand what it does before you run it, and do not expose it to the internet without protecting it. [What Labs is](https://linuxserver-playground.github.io/site/labs/).
+> Labs publishes newer, less proven software before it can earn a place in the main fleet. The LinuxServer team reviews every change to this repository and builds it with the same pipeline and base images as the fleet, but the application itself has not been security reviewed: its code, its releases and the files this image downloads from them are used as upstream publishes them. Treat it as you would any unaudited software: understand what it does before you run it, and do not expose it to the internet without protecting it. [What Labs is](https://linuxserverlabs-playground.github.io/site/).
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
@@ -32,8 +32,8 @@ Find us at:
 
 [![GitHub Release](https://img.shields.io/github/release/linuxserverlabs-playground/docker-photocraft.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserverlabs-playground/docker-photocraft/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserverlabs-playground/docker-photocraft/packages)
-[![Docs](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Docs&logo=materialformkdocs)](https://linuxserver-playground.github.io/site/labs/images/photocraft/)
-[![Builds](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Builds&logo=githubactions)](https://linuxserver-playground.github.io/site/labs/images/photocraft/#builds)
+[![Docs](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Docs&logo=materialformkdocs)](https://linuxserverlabs-playground.github.io/site/images/photocraft/)
+[![Builds](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Builds&logo=githubactions)](https://linuxserverlabs-playground.github.io/site/images/photocraft/#builds)
 
 [PhotoCraft](https://getartcraft.com/apps/photocraft) is an open source photo and image editor written from scratch in Rust, part of the [ArtCraft](https://getartcraft.com/) suite: layers, masks, adjustment layers, filters and raw import in a fast native interface.
 
@@ -230,7 +230,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 
 ## Docker Mods
 
-[![Docker Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=photocraft&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/labs/mods/?image=photocraft "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/labs/mods/?image=universal "view available universal mods.")
+[![Docker Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=photocraft&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/mods/?image=photocraft "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/mods/?image=universal "view available universal mods.")
 
 We publish various [Docker Mods](https://github.com/linuxserver-playground/docker-mods) to enable additional functionality within the containers. The list of Mods available for this image (if any) as well as universal mods that can be applied to any one of our images can be accessed via the badges above.
 
@@ -353,7 +353,7 @@ docker run --rm --privileged ghcr.io/linuxserver/qemu-static --reset
 
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
 
-Every push builds and tests the image with the shared workflow in [`linuxserver-playground/workflows`](https://github.com/linuxserver-playground/workflows); every build's tests, screenshots and package changes are on [the image's builds](https://linuxserver-playground.github.io/site/labs/images/photocraft/#builds) on the website.
+Every push builds and tests the image with the shared workflow in [`linuxserver-playground/workflows`](https://github.com/linuxserver-playground/workflows); every build's tests, screenshots and package changes are on [the image's builds](https://linuxserverlabs-playground.github.io/site/images/photocraft/#builds) on the website.
 
 ## Versions
 
