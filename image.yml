@@ -2,6 +2,9 @@
 schema: 1
 name: photocraft
 
+maintainers:
+- thelamer
+
 summary: |-
   [PhotoCraft](https://getartcraft.com/apps/photocraft) is an open source photo and image editor written from scratch in Rust, part of the [ArtCraft](https://getartcraft.com/) suite: layers, masks, adjustment layers, filters and raw import in a fast native interface.
 

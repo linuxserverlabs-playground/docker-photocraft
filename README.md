@@ -35,6 +35,8 @@ Find us at:
 [![Docs](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Docs&logo=materialformkdocs)](https://linuxserverlabs-playground.github.io/site/images/photocraft/)
 [![Builds](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Builds&logo=githubactions)](https://linuxserverlabs-playground.github.io/site/images/photocraft/#builds)
 
+Maintained by [thelamer](https://github.com/thelamer).
+
 [PhotoCraft](https://getartcraft.com/apps/photocraft) is an open source photo and image editor written from scratch in Rust, part of the [ArtCraft](https://getartcraft.com/) suite: layers, masks, adjustment layers, filters and raw import in a fast native interface.
 
 [![photocraft](https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/256x256/apps/ai.storyteller.photocraft.png)](https://getartcraft.com/apps/photocraft)

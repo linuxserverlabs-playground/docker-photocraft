@@ -10,6 +10,10 @@ This repository builds the `photocraft` container image, published as
 `ghcr.io/linuxserverlabs-playground/photocraft`. It is one of many LinuxServer.io images built from one shared pipeline, so a
 change that looks like an improvement in isolation is often wrong here.
 
+Maintained by [thelamer](https://github.com/thelamer).
+They are credited and mentioned when the image needs attention; that gives no access. The LinuxServer team
+reviews and merges every change.
+
 ## Decide where the change belongs
 
 1. A bug or feature in the application itself: upstream, not here.
