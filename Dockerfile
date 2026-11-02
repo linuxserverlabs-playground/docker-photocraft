@@ -1,0 +1,50 @@
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver-playground/baseimage-selkies:ubunturesolute
+
+# set version label
+ARG BUILD_DATE
+ARG VERSION
+ARG PHOTOCRAFT_RELEASE
+LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="thelamer"
+
+# title
+ENV TITLE=PhotoCraft \
+    NO_GAMEPAD=true \
+    PIXELFLUX_WAYLAND=true
+
+RUN \
+  echo "**** add icon ****" && \
+  curl -o \
+    /usr/share/selkies/www/icon.png \
+    https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/256x256/apps/ai.storyteller.photocraft.png && \
+  echo "**** install photocraft ****" && \
+  if [ -z ${PHOTOCRAFT_RELEASE+x} ]; then \
+    PHOTOCRAFT_RELEASE=$(curl -sX GET "https://api.github.com/repos/storytold/photocraft/releases/latest" \
+      | jq -r '.tag_name'); \
+  fi && \
+  curl -o \
+    /tmp/photocraft.deb -L \
+    "https://github.com/storytold/photocraft/releases/download/${PHOTOCRAFT_RELEASE}/photocraft-${PHOTOCRAFT_RELEASE#v}-linux-x86_64.deb" && \
+  apt-get update && \
+  apt-get install -y --no-install-recommends \
+    libegl1 \
+    xdg-desktop-portal \
+    xdg-desktop-portal-gtk \
+    /tmp/photocraft.deb && \
+  echo "**** cleanup ****" && \
+  apt-get autoclean && \
+  rm -rf \
+    /config/.cache \
+    /var/lib/apt/lists/* \
+    /var/tmp/* \
+    /tmp/*
+
+# add local files
+COPY /root /
+
+# ports and volumes
+EXPOSE 3001
+
+VOLUME /config
